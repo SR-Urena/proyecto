@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link rel="stylesheet" href="../CSS/nav.css">
+        <link rel="stylesheet" href="../CSS/contact.css">
+        <link rel="icon" type="image/png" href="../IMG/groceries.png">
+    <title>Contact | Buyed-Store</title>
+</head>
+<body style="background-image: url(../IMG/contact.jpg);">
+    <nav class="navbar navbar-expand-lg " style="position: sticky;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Contact</a>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" href="../index.html">Home</a>
+                    <a class="nav-link" href="carrito.html" >Cart</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
+                    <a class="nav-link" href="about.html">About</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container" >
+        <div class="mb-3 contact-form">
+            <h2 class="h1-responsive font-weight-bold text-center my-4">Contact Us</h2>
+            <p class="text-center w-responsive mx-auto mb-5">Any question? Do not hesitate to contact us. Our team will get in touch as soon as possible.</p>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="md-form mb-0">
+                        <label for="name" class="">Name</label>
+                        <input type="text" id="name" name="name" class="form-control">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="md-form mb-0">
+                        <label for="name" class="">Last name</label>
+                        <input type="text" id="name" name="name" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="md-form mb-0">
+                        <label for="name" class="">Subjet</label>
+                        <input type="text" id="name" name="name" class="form-control">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="md-form mb-0">
+                        <label for="email" class="">Email adress</label>
+                        <input type="text" id="email" name="email" class="form-control">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <hr>
+            <div class="text-center text-md-left">
+                <button onclick="mensaje()" type="submit">Send</button>
+                <script>
+                function mensaje() {
+                    alert('Mensaje enviado');
+                }
+                </script>
+            </div>
+            <div class="social">
+                <h4>Where to find us?</h4>
+                <a href="facebook.com" class="social__a">Facebook</a>
+                <li itemscope="" itemtype="http://schema.org/LocalBusiness">
+                    <span itemprop="telephone"><a href="tel:+50625370000" class="social__a">Phone number: (+506) 2537-000
+                    </a></span>
+                    <span itemprop="name" style="visibility: hidden;">Corporation</span>
+                </li>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>
