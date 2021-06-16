@@ -8,7 +8,7 @@ if (form) {
     const filter = iSearch.value;
 
     if (filter !== "") {
-      const dataRequest = await fetch("../JSON/data.json");
+      const dataRequest = await fetch("data.json");
       const dataJson = await dataRequest.json();
       const products = dataJson.products;
 
